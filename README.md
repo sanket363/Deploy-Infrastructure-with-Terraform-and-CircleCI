@@ -15,4 +15,4 @@ Under the Team API Token section, click Create a team token.
  
 ### Fork and Clone Example Configuration:
 
-(Fork this Repo)[https://github.com/hashicorp/learn-terraform-circleci.git]
+[Fork this Repo](https://github.com/hashicorp/learn-terraform-circleci.git)
