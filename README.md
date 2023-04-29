@@ -105,7 +105,18 @@ Review the output for the plan-apply job, which shows the proposed execution pla
 
 Then, return to the workflow overview by clicking the plan_approve_apply workflow at the top and approve it.
 
-![image](https://user-images.githubusercontent.com/98816965/235306934-22ac8073-5900-4c83-aba8-a558e9634580.png)
+Boom you have deployed the infra on the AWS!!!
+
+### Destroy the infrastructure
+The plan-destroy step in the workflow generated and saved a plan to destroy your application. The hold-destroy job is a manual gate step that gives you to review the plan before the workflow destroys your resources. Click on the hold step and then choose "approve" to move on to the destroy job in this workflow.
+
+While Terraform is destroying your infrastructure, navigate to the plan-destroy job in the CircleCI web UI to observe the output in the terraform create destroy plan dropdown.
+
+
+# Note
+The above project is the created project by hashicorp with tutorial we will try to make it a diffrent way the project above deploys the s3 bucket with some application we will try to host a static website on the s3 bucket using Terraform and Circle CI
+
+
 
 
 
