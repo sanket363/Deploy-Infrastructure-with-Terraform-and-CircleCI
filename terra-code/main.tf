@@ -37,6 +37,21 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
   })
 }
 
+# Upload website files to S3 bucket
+resource "aws_s3_bucket_object" "index_html" {
+  bucket = aws_s3_bucket.static_website.id
+  key    = "index.html"
+  source = "${path.module}/website/index.html"
+  etag   = filemd5("${path.module}/website/index.html")
+}
+
+resource "aws_s3_bucket_object" "style_css" {
+  bucket = aws_s3_bucket.static_website.id
+  key    = "style.css"
+  source = "${path.module}/website/style.css"
+  etag   = filemd5("${path.module}/website/style.css")
+}
+
 output "website_endpoint" {
-  value = "http://${aws_s3_bucket.static_website.website_endpoint}"
+  value = aws_s3_bucket.static_website.website_endpoint
 }
