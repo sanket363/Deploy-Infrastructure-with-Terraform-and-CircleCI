@@ -13,3 +13,6 @@ To complete this tutorial, the following are needed: a GitHub account, a CircleC
 Under the Team API Token section, click Create a team token.
 ![image](https://user-images.githubusercontent.com/98816965/235306131-94e697cc-938c-4541-9b55-248e3b83a53d.png)
  
+### Fork and Clone Example Configuration:
+
+(Fork this Repo)[https://github.com/hashicorp/learn-terraform-circleci.git]
