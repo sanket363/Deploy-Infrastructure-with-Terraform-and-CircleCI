@@ -114,8 +114,9 @@ While Terraform is destroying your infrastructure, navigate to the plan-destroy 
 
 
 # Note
-The above project is the created project by hashicorp with tutorial we will try to make it a diffrent way the project above deploys the s3 bucket with some application we will try to host a static website on the s3 bucket using Terraform and Circle CI
+The above project is the created project by hashicorp with tutorial
 
+Instead of following the tutorial provided by HashiCorp, we plan to take a different approach to the project by deploying a static website on an S3 bucket using Terraform and CircleCI. This will require a different set of steps and configuration than what was used in the original project.
 
 
 
